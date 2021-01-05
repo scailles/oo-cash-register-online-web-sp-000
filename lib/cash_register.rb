@@ -43,6 +43,7 @@ attr_reader :title
   
   def void_last_transaction
     @total -= @last_transaction
+    @items.pop
   end
   
   
