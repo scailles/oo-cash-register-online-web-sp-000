@@ -15,6 +15,7 @@ attr_reader :title
   def add_item(title, price, quantity= 1)
     @title = title
     @total += (price * quantity)
+    @last_transaction = (price * quantity)
     i = 0
     until i == quantity do 
       @items << title
@@ -41,9 +42,7 @@ attr_reader :title
   end
   
   def void_last_transaction
-    last_transaction = (@items[-2] = price)
-    @total -= last_transaction
-    @total
+    @total -= @last_transaction
   end
   
   
