@@ -41,7 +41,7 @@ attr_reader :title
   end
   
   def void_last_transaction
-    last_transaction = @items[-2] = price
+    last_transaction = (@items[-2] = price)
     @total -= last_transaction
     @total
   end
