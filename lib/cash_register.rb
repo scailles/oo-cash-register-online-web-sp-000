@@ -21,6 +21,7 @@ attr_reader :title
       i += 1
     end
     @last_transaction = @total
+    @total
   end
   
   
