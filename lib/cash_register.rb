@@ -20,8 +20,7 @@ attr_reader :title
       @items << title
       i += 1
     end
-    @last_transaction = @total
-    @total
+
   end
   
   
