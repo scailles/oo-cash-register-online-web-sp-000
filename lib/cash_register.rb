@@ -40,7 +40,8 @@ attr_reader :title
   end
   
   def void_last_transaction
-    
+    @total -= @price
+  end
   
   
   
